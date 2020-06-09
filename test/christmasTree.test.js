@@ -10,6 +10,14 @@ describe('Christmas Tree', () => {
 
     // Assert
     // que el arbol sea *
-    expect(christmasTree).toMatch('*')
+    expect(christmasTree).toBe('*')
+  })
+  it('debería poder crear un arbol de 2 alturas', () => {
+    //Arrange
+
+    //Act
+    const christmasTree = buildChristmasTree(2)
+    //Assert
+    expect(christmasTree).toBe(' * \n***')
   })
 })
