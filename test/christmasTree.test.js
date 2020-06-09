@@ -1,3 +1,5 @@
+const buildChristmasTree = require('../src/christmasTree.js')
+
 describe('Christmas Tree', () => {
   it('debería poder crear un arbol de 1 altura', () => {
     // Arrange
@@ -11,7 +13,3 @@ describe('Christmas Tree', () => {
     expect(christmasTree).toMatch('*')
   })
 })
-
-function buildChristmasTree() {
-  return '*'
-}
