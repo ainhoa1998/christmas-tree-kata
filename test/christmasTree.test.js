@@ -20,4 +20,12 @@ describe('Christmas Tree', () => {
     //Assert
     expect(christmasTree).toBe(' * \n***')
   })
+  it('debería poder crear un arbol de 5 alturas', () => {
+    //Arrange
+
+    //Act
+    const christmasTree = buildChristmasTree(3)
+    //Assert
+    expect(christmasTree).toBe('  *  \n *** \n*****')
+  })
 })
