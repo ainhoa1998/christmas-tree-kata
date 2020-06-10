@@ -4,9 +4,7 @@ module.exports = function buildChristmasTree(altura) {
     const espacios = ' '.repeat(Math.ceil(altura - i))
     const asteriscos = '*'.repeat(i * 2 - 1)
 
-    str += espacios
-    str += asteriscos
-    str += espacios
+    str += espacios + asteriscos + espacios
 
     if (i < altura) {
       str += '\n'
