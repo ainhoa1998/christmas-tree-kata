@@ -1,9 +1,10 @@
 module.exports = function buildChristmasTree(altura) {
   let str = ''
   for (let i = 1; i <= altura; i++) {
-    str += ' '.repeat(Math.ceil(altura - i))
+    let espacios = ' '.repeat(Math.ceil(altura - i))
+    str += espacios
     str += '*'.repeat(i * 2 - 1)
-    str += ' '.repeat(Math.ceil(altura - i))
+    str += espacios
 
     if (i < altura) {
       str += '\n'
